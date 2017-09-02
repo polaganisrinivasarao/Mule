@@ -1,0 +1,11 @@
+#%RAML 1.0
+title: validations examples
+types: 
+  DOB:
+    type: Greaterthancurrentdate
+    maximum: 2017
+  Greaterthancurrentdate:
+    type: number
+    maximum: 2017
+
+

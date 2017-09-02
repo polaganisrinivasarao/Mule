@@ -1,0 +1,13 @@
+#%RAML 1.0
+baseUri: https://mocksvc.mulesoft.com/mocks/64d3dcc7-5a70-43e5-834a-097343139d54 # 
+title: Constraints example
+types: 
+  Employee:
+    type: object
+    properties: 
+      FirstName: string
+      LastName: string
+      EmployeeID: integer
+      DOB: date-only
+      Email: string
+      Phone: integer

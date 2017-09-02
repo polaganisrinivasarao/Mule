@@ -1,0 +1,16 @@
+#%RAML 1.0
+title: Union Example
+types: 
+  employeeorindiv:
+    type: employee | individual
+  employee:
+    type: object
+    description: employeedetails
+    properties: 
+      name: string
+      address: string
+  individual:
+    description: individual details
+    properties: 
+      name: string
+      address: string

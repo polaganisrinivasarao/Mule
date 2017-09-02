@@ -1,0 +1,15 @@
+#%RAML 1.0
+title: User defined metadata
+types: 
+  ValidDate:
+    type: date-only
+    facets:
+      officehours?: time-only
+      noholidays?: boolean
+  BusineessHours:
+    type: ValidDate
+    officehours: 08:49:37
+    noholidays: true
+
+
+ 

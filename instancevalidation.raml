@@ -1,0 +1,17 @@
+#%RAML 1.0
+baseUri: https://mocksvc.mulesoft.com/mocks/e81f2163-3eaa-41aa-8050-f02624566bab # 
+title: Instance validation example
+types: 
+  User:
+    type: object
+    properties: 
+      name: string
+      address: string
+      email: string
+/users/id:
+  get:
+    responses: 
+      200:
+        body: 
+          application/json:
+            type: User

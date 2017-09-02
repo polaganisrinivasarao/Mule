@@ -1,0 +1,16 @@
+#%RAML 1.0
+baseUri: https://mocksvc.mulesoft.com/mocks/b6e03eab-85ee-496c-afc2-2aafb76939ed # 
+title: External API Example
+version: v1
+types: 
+  type1: !include Type1.raml
+
+mediaType: application/json
+/objects:
+  get:
+    responses: 
+      200:
+        body: 
+          type: type1
+  
+  

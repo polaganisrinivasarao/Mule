@@ -1,0 +1,15 @@
+#%RAML 1.0
+title: sample libraries
+mediaType: application/json
+
+uses: 
+  common: Type1.raml
+
+/users:
+  get:
+    responses: 
+      200:
+        body: 
+          type: array
+  
+    

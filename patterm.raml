@@ -1,0 +1,10 @@
+#%RAML 1.0
+title: String Pattern example
+types: 
+  Employee:
+    type: Pattern
+  Pattern:
+    type: object
+    properties: 
+      firstName: string
+        [ pattern: ".+"]
